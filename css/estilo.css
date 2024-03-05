@@ -49,7 +49,9 @@ body {
 
     font-family: "Protest Riot", sans-serif;
     font-size: 18px;
-    background-color: #dad7cd;    
+    background-color: #dad7cd; 
+    display: flex;
+    justify-content: start;   
 }
 
 .navbar-collapse :hover {
@@ -65,9 +67,7 @@ body {
 }
 
 .navbar-collapse   a{
-    color: black;
-    margin-left: 100px;
-   
+    color: black;  
 }
 
 /* fin de estilo de la barra de navegacion */
@@ -203,6 +203,7 @@ footer &copy {
     height: 350px;
     margin-top: 85px;
     border-radius: 50%;
+    margin-left: -5px;
 
 }
 /* fin estilo encabezado mision */
@@ -225,15 +226,13 @@ footer &copy {
     padding: 20px;
     font-size: 19px;
     letter-spacing: 2px;
-    
-
 }
 .imagen-pasion{
     width: 400px;
     height: 350px;
     margin-top: 80px;
     border-radius: 50%;
-
+    margin-left: -5px;
 }
 /* fin encabezado pasion */
 
@@ -264,6 +263,7 @@ footer &copy {
     height: 350px;
     margin-top: 80px;
     border-radius: 50%;
+    margin-left: -5px;
 }
 
 /* fin encabezado diseño */
@@ -293,6 +293,7 @@ footer &copy {
     height: 350px;
     margin-top: 80px;
     border-radius: 50%;
+    margin-left: -5px;
 }
 
 /* fin encabezado soporte */
