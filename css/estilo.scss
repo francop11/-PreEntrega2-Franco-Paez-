@@ -1,0 +1,333 @@
+/* tipografia traida desde google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+/* .protest-riot-regular {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* variables*/
+$color-encabezados:springgreen;
+$color-barra-navegacion:#dad7cd;
+$font-principal:"Protest Riot", sans-serif;
+$font-encabezados:Georgia, 'Times New Roman', Times, serif;
+
+/* comienzo de hoja de estilo de acerca de voragine */
+body {
+    background-image: url(../imagenes/fondo-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* estilos de la barra de navegacion */
+
+
+.bg-body-tertiary{
+    background-color: $color-barra-navegacion !important; 
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    
+}
+.navbar-brand {
+
+    font-family: $font-principal;
+    color: white;
+    background-color: $color-barra-navegacion;
+    text-shadow: 0 0 10px black;
+    margin-left: 20px;
+
+
+}
+
+.navbar-brand:hover {
+    border-bottom: 3p solid black;
+    transition: 0.3s;
+    color: black;
+}
+
+
+.navbar-collapse  {
+
+    font-family: $font-principal;
+    font-size: 18px;
+    background-color: $color-barra-navegacion;   
+}
+
+.navbar-collapse :hover {
+    border-bottom: 3p solid white;
+    transition: 0.3s;
+    
+}
+
+.navbar-collapse  a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.navbar-collapse   a{
+    color: black;  
+}
+
+
+/* fin de estilo de la barra de navegacion */
+
+
+/* inicio de estilo del contenido principal */
+
+
+
+.imagen {
+    width: 350px;
+    height: 450px;
+    margin-top: 125px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+
+
+.texto h1 {
+    color:$color-encabezados;
+    font-family: $font-encabezados;
+    text-shadow: 0 0 10px black;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.texto {
+    width: 100%;
+    height: 100%;
+    font-family: $font-principal;
+    padding: 20px;
+    font-size: 19px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+
+}
+
+/* fin de estilo del contenido principal */
+
+
+/* incio de estilo del footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 50px;
+    background-image: url(../imagenes/costura.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+.whats {
+    height: 45px;
+    width: 45px;
+    background-color: $color-encabezados;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5 3px white;
+}
+
+/* fin de estilo del footer */
+
+/* inicio de estilo para la pagina puntos fuertes */
+.puntos-fuertes{
+    background-image: url(../imagenes/fondo-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.encabezado-puntosfuertes {
+    text-align: center;
+    margin-top: 120px;
+    text-transform: uppercase;
+    color: black;
+    font-family: $font-principal;
+    font-size: 30px;
+    text-shadow: 0 0 10px black;
+    padding: 20px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    
+    
+
+}
+/* inicio encabezado mision */
+.texto-mision h2{
+    color: $color-encabezados;
+    font-family: $font-encabezados;
+    text-shadow: 0 0 10px black;
+    margin-top: 80px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    text-decoration: underline ;
+}
+.texto-mision p{
+    width: 100%;
+    height: 100%;
+    font-family: $font-principal;
+    padding: 20px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    border-radius: 50%;
+    margin-left: -5px;
+
+}
+.imagen-mision{
+    width: 400px;
+    height: 350px;
+    margin-top: 85px;
+    border-radius: 50%;
+    margin-left: -5px;
+
+}
+/* fin estilo encabezado mision */
+
+/* incio encabezado pasion */
+.texto-pasion h2{
+    color: $color-encabezados;
+    font-family: $font-encabezados;
+    text-shadow: 0 0 10px black;
+    margin-top: 80px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    text-decoration: underline ;
+    margin-left: 16px;
+}
+.texto-pasion p{
+    width: 100%;
+    height: 100%;
+    font-family: $font-principal;
+    padding: 20px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+.imagen-pasion{
+    width: 400px;
+    height: 350px;
+    margin-top: 80px;
+    border-radius: 50%;
+    margin-left: -5px;
+}
+/* fin encabezado pasion */
+
+/* inicio encabezado diseño */
+.texto-diseño h2{
+    color: $color-encabezados;
+    font-family: $font-encabezados;
+    text-shadow: 0 0 10px black;
+    margin-top: 80px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left: 16px;
+}
+
+.texto-diseño p{
+    width: 100%;
+    height: 100%;
+    font-family: $font-principal;
+    padding: 20px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    
+}
+
+.imagen-diseño{
+    width: 400px;
+    height: 350px;
+    margin-top: 80px;
+    border-radius: 50%;
+    margin-left: -5px;
+}
+
+/* fin encabezado diseño */
+
+/* inicio encabezado soporte */
+.texto-soporte h2{
+    color: $color-encabezados;
+    font-family: $font-encabezados;
+    text-shadow: 0 0 10px black;
+    margin-top: 80px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left: 16px;
+}
+.texto-soporte p{
+    width: 100%;
+    height: 100%;
+    font-family: $font-principal;
+    padding: 20px;
+    font-size: 19px;
+    letter-spacing: 2px;
+
+}
+.imagen-soporte{
+    width: 400px;
+    height: 350px;
+    margin-top: 80px;
+    border-radius: 50%;
+    margin-left: -5px;
+}
+
+/* fin encabezado soporte */
+
+
+/* inicio de estilo para la pagina taller */
+.imagen-taller{
+    width: 350px;
+    height: 450px;
+    margin-top: 60px;
+    border-radius: 20%;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    
+  
+    
+}
+
+.texto-taller h1 {
+    color: $color-encabezados;
+    font-family:$font-encabezados;
+    text-shadow: 0 0 10px black;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+   
+    
+}
+
+.texto-taller {
+   
+    font-family: $font-principal;
+    padding: 20px;
+    font-size: 19px;
+    margin-left: 100px;
+    letter-spacing: 2px;
+    margin-left: -5px;
+
+}
