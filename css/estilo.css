@@ -491,7 +491,7 @@ footer {
   letter-spacing: 10px;
   font-size: 50px;
   color: black;
-  margin-left: 47%;
+  margin-left: 46%;
 }
 .redes-formulario i:hover {
   transform: scale(1.2);
@@ -511,7 +511,7 @@ footer {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid springgreen;
+  border: 1px solid #1f53c5;
   font-family: "Protest Riot", sans-serif;
   font-size: 19px;
   color: black;
@@ -538,7 +538,7 @@ footer {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid springgreen;
+  border: 1px solid #1f53c5;
   font-family: "Protest Riot", sans-serif;
   font-size: 19px;
   color: black;
