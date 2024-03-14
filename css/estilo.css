@@ -7,11 +7,16 @@
     font-style: normal;
   } */
 /* variables*/
+/*mixin para imagenes de encabezados de puntos fuertes*/
+/* exetend para imagenes*/
+.centrado-imagen, .productos, .puntos-fuertes, footer, body {
+  background-size: cover;
+  background-position: center;
+}
+
 /* comienzo de hoja de estilo de acerca de voragine */
 body {
   background-image: url(../imagenes/fondo-1.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 /* estilos de la barra de navegacion */
@@ -38,7 +43,7 @@ body {
 
 .navbar-collapse {
   font-family: "Protest Riot", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   background-color: #dad7cd;
 }
 
@@ -96,8 +101,6 @@ footer {
   font-size: 30px;
   margin-top: 50px;
   background-image: url(../imagenes/costura.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .redes a {
@@ -126,8 +129,6 @@ footer {
 /* inicio de estilo para la pagina puntos fuertes */
 .puntos-fuertes {
   background-image: url(../imagenes/fondo-2.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .encabezado-puntosfuertes {
@@ -154,7 +155,6 @@ footer {
   margin-left: 12px;
   text-decoration: underline;
 }
-
 .texto-mision p {
   width: 100%;
   height: 100%;
@@ -162,14 +162,6 @@ footer {
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
-  border-radius: 50%;
-  margin-left: -5px;
-}
-
-.imagen-mision {
-  width: 400px;
-  height: 350px;
-  margin-top: 85px;
   border-radius: 50%;
   margin-left: -5px;
 }
@@ -186,7 +178,6 @@ footer {
   text-decoration: underline;
   margin-left: 16px;
 }
-
 .texto-pasion p {
   width: 100%;
   height: 100%;
@@ -194,14 +185,6 @@ footer {
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
-}
-
-.imagen-pasion {
-  width: 400px;
-  height: 350px;
-  margin-top: 80px;
-  border-radius: 50%;
-  margin-left: -5px;
 }
 
 /* fin encabezado pasion */
@@ -216,7 +199,6 @@ footer {
   text-decoration: underline;
   margin-left: 16px;
 }
-
 .texto-diseño p {
   width: 100%;
   height: 100%;
@@ -224,14 +206,6 @@ footer {
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
-}
-
-.imagen-diseño {
-  width: 400px;
-  height: 350px;
-  margin-top: 80px;
-  border-radius: 50%;
-  margin-left: -5px;
 }
 
 /* fin encabezado diseño */
@@ -246,7 +220,6 @@ footer {
   text-decoration: underline;
   margin-left: 16px;
 }
-
 .texto-soporte p {
   width: 100%;
   height: 100%;
@@ -256,15 +229,44 @@ footer {
   letter-spacing: 2px;
 }
 
+/* fin encabezado soporte */
+/*imagen mision */
+.imagen-mision {
+  width: 400px;
+  height: 350px;
+  margin-top: 80px;
+  border-radius: 50%;
+  margin-left: -spx;
+}
+
+/*imagen pasion*/
+.imagen-pasion {
+  width: 400px;
+  height: 350px;
+  margin-top: 80px;
+  border-radius: 50%;
+  margin-left: -spx;
+}
+
+/*imagen diseño*/
+.imagen-diseño {
+  width: 400px;
+  height: 350px;
+  margin-top: 80px;
+  border-radius: 50%;
+  margin-left: -spx;
+}
+
+/*imagen soporte */
 .imagen-soporte {
   width: 400px;
   height: 350px;
   margin-top: 80px;
   border-radius: 50%;
-  margin-left: -5px;
+  margin-left: -spx;
 }
 
-/* fin encabezado soporte */
+/* fin de estilos de la pagina puntos fuertes*/
 /* inicio de estilo para la pagina taller */
 .imagen-taller {
   width: 350px;
@@ -297,8 +299,6 @@ footer {
 /* inicio de estilo para la pagina productos */
 .productos {
   background-image: url(../imagenes/fondo-2.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .encabezado-productos {
@@ -334,19 +334,16 @@ footer {
   border: solid springgreen 2px;
 }
 
-.card-img1 {
-  height: 350px;
-  background-image: url(../imagenes/cartucheras.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
 .cards-title {
   color: springgreen;
   padding: 10px;
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: underline;
+}
+
+.cards-title:hover {
+  transform: scale(1.1);
 }
 
 .cards-desc {
@@ -363,12 +360,8 @@ footer {
 }
 
 .a {
-  font-size: 20px;
+  font-size: 19px;
   font-family: "Protest Riot", sans-serif;
-}
-
-.cards-title:hover {
-  transform: scale(1.1);
 }
 
 .cards-redes i:hover {
@@ -376,7 +369,16 @@ footer {
 }
 
 /*fin de estilos de cards */
-/*imagen card2 */
+/*mixin para imagenes de cards*/
+/*imagen card 1 */
+.card-img1 {
+  height: 350px;
+  background-image: url(../imagenes/cartucheras.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*imagen card 2 */
 .card-img2 {
   height: 350px;
   background-image: url(../imagenes/mochila.jpeg);
@@ -384,7 +386,7 @@ footer {
   background-position: center;
 }
 
-/*imagen card3 */
+/*imagen card 3 */
 .card-img3 {
   height: 350px;
   background-image: url(../imagenes/set-matero.jpeg);
@@ -392,7 +394,7 @@ footer {
   background-position: center;
 }
 
-/*imagen card4 */
+/*imagen card 4 */
 .card-img4 {
   height: 350px;
   background-image: url(../imagenes/almohada-cervvical.jpeg);
@@ -400,7 +402,7 @@ footer {
   background-position: center;
 }
 
-/*imagen card5*/
+/*imagen card 5*/
 .card-img5 {
   height: 350px;
   background-image: url(../imagenes/billetera.jpeg);
@@ -408,7 +410,7 @@ footer {
   background-position: center;
 }
 
-/*imagen card6*/
+/*imagen card 6*/
 .card-img6 {
   height: 350px;
   background-image: url(../imagenes/cartuchera-gliter.jpeg);
@@ -416,7 +418,7 @@ footer {
   background-position: center;
 }
 
-/*imagen card7 */
+/*imagen card 7 */
 .card-img7 {
   height: 350px;
   background-image: url(../imagenes/porta-cosmeticos.jpeg);
@@ -424,7 +426,7 @@ footer {
   background-position: center;
 }
 
-/*imagen card8 */
+/*imagen card 8 */
 .card-img8 {
   height: 350px;
   background-image: url(../imagenes/folio-a4.jpeg);
@@ -432,14 +434,15 @@ footer {
   background-position: center;
 }
 
-/*imagen card9 */
+/*imagen card 9 */
 .card-img9 {
   height: 350px;
-  background-image: url(../imagenes/scrunchines.jpeg);
+  background-image: url(../imagenes/porta-cosmeticos.jpeg);
   background-size: cover;
   background-position: center;
 }
 
+/*fin de imagenes de cards */
 /*video*/
 .texto-video {
   color: black;
@@ -453,7 +456,7 @@ footer {
 
 .video {
   width: 400px;
-  height: 400px;
+  height: 350px;
   border-radius: 10%;
   margin-top: 30px;
 }
@@ -488,9 +491,8 @@ footer {
   letter-spacing: 10px;
   font-size: 50px;
   color: black;
-  margin-left: 50%;
+  margin-left: 47%;
 }
-
 .redes-formulario i:hover {
   transform: scale(1.2);
 }
@@ -509,9 +511,9 @@ footer {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
-  font-family: "calibri";
-  font-size: 18px;
+  border: 1px solid springgreen;
+  font-family: "Protest Riot", sans-serif;
+  font-size: 19px;
   color: black;
 }
 .formulario .enviar:hover {
@@ -527,18 +529,18 @@ footer {
   border-radius: 4px;
   font-family: "Protest Riot", sans-serif;
   color: white;
-  box-shadow: 7px 13px 37px #000;
+  box-shadow: 7px 13px 37px black;
 }
 
 .controls {
   width: 100%;
-  background: #ffffe5;
+  background: #dad7cd;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid springgreen;
   font-family: "Protest Riot", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   color: black;
 }
 
