@@ -362,6 +362,19 @@ footer {
   font-size: 50px;
 }
 
+.a {
+  font-size: 20px;
+  font-family: "Protest Riot", sans-serif;
+}
+
+.cards-title:hover {
+  transform: scale(1.1);
+}
+
+.cards-redes i:hover {
+  transform: scale(1.2);
+}
+
 /*fin de estilos de cards */
 /*imagen card2 */
 .card-img2 {
@@ -445,9 +458,88 @@ footer {
   margin-top: 30px;
 }
 
-.a {
-  font-size: 20px;
+/*comienzo de la seccion de estilos de la pagina contacto*/
+/*encabezado contacto*/
+.encabezado-contacto {
+  text-align: center;
+  margin-top: 120px;
+  text-transform: uppercase;
+  color: springgreen;
   font-family: "Protest Riot", sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0 10px black;
+  padding: 20px;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+
+.parrafo-contacto {
+  font-family: "Protest Riot", sans-serif;
+  padding: 20px;
+  font-size: 19px;
+  margin-left: 100px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: -5px;
+}
+
+.redes-formulario a {
+  text-decoration: none;
+  letter-spacing: 10px;
+  font-size: 50px;
+  color: black;
+  margin-left: 50%;
+}
+
+.redes-formulario i:hover {
+  transform: scale(1.2);
+}
+
+/*formulario*/
+.formulario {
+  text-align: center;
+}
+.formulario label {
+  color: black;
+  font-family: "Protest Riot", sans-serif;
+}
+.formulario .enviar {
+  width: 100%;
+  background: #dad7cd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: black;
+}
+.formulario .enviar:hover {
+  transform: scale(1.1);
+}
+
+.form-register {
+  width: 400px;
+  background: #dad7cd;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "Protest Riot", sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.controls {
+  width: 100%;
+  background: #ffffe5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "Protest Riot", sans-serif;
+  font-size: 18px;
+  color: black;
 }
 
 /*# sourceMappingURL=estilo.css.map */
