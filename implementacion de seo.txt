@@ -1,0 +1,3 @@
+hola buenas wanda,te comento en este archivo las implementaciones de seo en mis archivos html,
+en los 5 archivos inclui meta descrption y meta keywords,tambien iconos y titulos.
+complete todos los alt de las imagenes y optimize todas las imagenes y videos del sitio
