@@ -10,6 +10,7 @@
 
 /* variables*/
 $color-encabezados:springgreen;
+$color-secundario-para-enabezados:#386641;
 $color-barra-navegacion:#dad7cd;
 $font-principal:"Protest Riot", sans-serif;
 $font-encabezados:Georgia, 'Times New Roman', Times, serif;
@@ -21,6 +22,13 @@ $decoration-text:underline;
 $shadown-text:0 0 10px black;
 $color-black:black;
 $color-white:white;
+/*mixin para imagenes de cards*/
+@mixin img ($height,$bimg,$bsize,$bposition){
+    height: $height;
+    background-image: $bimg;
+    background-size: $bsize;
+    background-position: $bposition;
+}
 /*mixin para imagenes de encabezados de puntos fuertes*/
 @mixin img-puntos-fuertes ($width,$height,$mar-top,$bord-radius,$mar-left){
     width: $width;
@@ -123,6 +131,73 @@ body {
 }
 
 /* fin de estilo del contenido principal */
+
+/* seccion secundaria*/
+
+/* seccion coleccion */
+.section-coleccion{
+    text-transform: $transform-text;
+    font-family: $font-encabezados;
+    color: $color-secundario-para-enabezados;
+    font-size: $font-size-textos;
+    margin-top: 100px;
+}
+.coleccion{
+    margin-top: 40px;
+    padding: 20px;
+    .img1{
+        width: 200px;
+        height: 250px;   
+       
+}
+    .parrafo-coleccion{
+        font-family: $font-principal;
+        color: $color-black;}
+}
+/* fin seccion coleccion */
+/* seccion comunidad*/
+.comunidad{
+    text-transform: $transform-text;
+    font-family: $font-encabezados;
+    color: $color-secundario-para-enabezados;
+    font-size: $font-size-textos;
+    margin-top: 100px;
+}
+
+.cliente{
+    margin-top: 50px;
+    .cliente-2{
+        width: 200px;
+        height: 250px;}
+        .parrafo-cliente{
+            font-family: $font-principal;
+            color: $color-black;
+        }
+}
+/* fin seccion comunidad */
+/* fin seccion secundaria */
+
+/* conatiner de imagenes para seccion incio y compartida con seccion taller */
+.container {
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0, 24px;
+   }
+   
+   .box {
+    height: 200px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: 14px;
+   }
+   .box-inicio:hover{
+    transform: scale(1.6);
+}
+/* fin de container de imagenes */
 
 
 /* incio de estilo del footer */
@@ -306,7 +381,36 @@ footer {
     letter-spacing: 2px;
     margin-left: -5px;
 }
+/* fin de la seccion taller */
+
+/* seccion preparacion */
+/* encabezado preparacion*/
+.encabezado-preparacion{
+    margin-top: 60px;
+    h2{
+        text-align: center;
+        text-transform: $transform-text;
+        font-family: $font-encabezados;
+        color: $color-secundario-para-enabezados;
+        text-shadow: $shadown-text;
+    }p{
+        text-align: center;
+        font-family: $font-principal;
+    }
+}
+/* fin encabezado preparacion*/
+/* galeria de imagenes de preparacion (container compartdio con acerca de voragine*/
+
+   .box:hover{
+    transform: scale(1.2);
+}
+/* fin galeria de imagenes de preparacion*/
+/* fin de seccion preparacion */
+
+
 /* fin de estilo para la pagina taller */
+
+
 
 /* inicio de estilo para la pagina productos */
 .productos{
@@ -348,11 +452,11 @@ footer {
 }
 
 .cards-title{
-    color: $color-encabezados;
+    color: $color-secundario-para-enabezados;
     padding: 10px;
     font-size: 30px;
     font-family: $font-encabezados;
-    text-decoration: $decoration-text;  
+    text-decoration: $decoration-text ;  
 }
 .cards-title:hover{
     transform: scale(1.1);
@@ -380,16 +484,9 @@ footer {
 }
 /*fin de estilos de cards */
 
-/*mixin para imagenes de cards*/
-@mixin img ($height,$bimg,$bsize,$bposition){
-    height: $height;
-    background-image: $bimg;
-    background-size: $bsize;
-    background-position: $bposition;
-}
 /*imagen card 1 */
 .card-img1{
-    @include img(350px,url(../imagenes/cartucheras.jpeg),cover,center)
+    @include img(350px,url(../imagenes/cartucheras.jpg),cover,center)
 }
 
 /*imagen card 2 */
@@ -404,12 +501,12 @@ footer {
 
 /*imagen card 4 */
 .card-img4{
-    @include img(350px,url(../imagenes/almohada-cervvical.jpeg),cover,center)
+    @include img(350px,url(../imagenes/almohada-cervvical.jpg),cover,center)
 }
 
 /*imagen card 5*/
 .card-img5{
-    @include img(350px,url(../imagenes/billetera.jpeg),cover,center)
+    @include img(350px,url(../imagenes/billetera.jpg),cover,center)
 }
 /*imagen card 6*/
 .card-img6{
@@ -421,11 +518,11 @@ footer {
 }
 /*imagen card 8 */
 .card-img8{
-    @include img(350px,url(../imagenes/folio-a4.jpeg),cover,center)
+    @include img(350px,url(../imagenes/folio-a4.jpg),cover,center)
 }
 /*imagen card 9 */
 .card-img9{
-    @include img(350px,url(../imagenes/porta-cosmeticos.jpeg),cover,center)
+    @include img(350px,url(../imagenes/scrunchines.jpeg),cover,center)
 }
 /*fin de imagenes de cards */
 /*video*/

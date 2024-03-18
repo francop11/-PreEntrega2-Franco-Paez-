@@ -7,6 +7,7 @@
     font-style: normal;
   } */
 /* variables*/
+/*mixin para imagenes de cards*/
 /*mixin para imagenes de encabezados de puntos fuertes*/
 /* exetend para imagenes*/
 .centrado-imagen, .productos, .puntos-fuertes, footer, body {
@@ -92,6 +93,76 @@ body {
 }
 
 /* fin de estilo del contenido principal */
+/* seccion secundaria*/
+/* seccion coleccion */
+.section-coleccion {
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #386641;
+  font-size: 19px;
+  margin-top: 100px;
+}
+
+.coleccion {
+  margin-top: 40px;
+  padding: 20px;
+}
+.coleccion .img1 {
+  width: 200px;
+  height: 250px;
+}
+.coleccion .parrafo-coleccion {
+  font-family: "Protest Riot", sans-serif;
+  color: black;
+}
+
+/* fin seccion coleccion */
+/* seccion comunidad*/
+.comunidad {
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #386641;
+  font-size: 19px;
+  margin-top: 100px;
+}
+
+.cliente {
+  margin-top: 50px;
+}
+.cliente .cliente-2 {
+  width: 200px;
+  height: 250px;
+}
+.cliente .parrafo-cliente {
+  font-family: "Protest Riot", sans-serif;
+  color: black;
+}
+
+/* fin seccion comunidad */
+/* fin seccion secundaria */
+/* conatiner de imagenes para seccion incio y compartida con seccion taller */
+.container {
+  overflow: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0, 24px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 14px;
+}
+
+.box-inicio:hover {
+  transform: scale(1.6);
+}
+
+/* fin de container de imagenes */
 /* incio de estilo del footer */
 footer {
   background-color: black;
@@ -295,6 +366,32 @@ footer {
   margin-left: -5px;
 }
 
+/* fin de la seccion taller */
+/* seccion preparacion */
+/* encabezado preparacion*/
+.encabezado-preparacion {
+  margin-top: 60px;
+}
+.encabezado-preparacion h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #386641;
+  text-shadow: 0 0 10px black;
+}
+.encabezado-preparacion p {
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+}
+
+/* fin encabezado preparacion*/
+/* galeria de imagenes de preparacion (container compartdio con acerca de voragine*/
+.box:hover {
+  transform: scale(1.2);
+}
+
+/* fin galeria de imagenes de preparacion*/
+/* fin de seccion preparacion */
 /* fin de estilo para la pagina taller */
 /* inicio de estilo para la pagina productos */
 .productos {
@@ -335,7 +432,7 @@ footer {
 }
 
 .cards-title {
-  color: springgreen;
+  color: #386641;
   padding: 10px;
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -369,11 +466,10 @@ footer {
 }
 
 /*fin de estilos de cards */
-/*mixin para imagenes de cards*/
 /*imagen card 1 */
 .card-img1 {
   height: 350px;
-  background-image: url(../imagenes/cartucheras.jpeg);
+  background-image: url(../imagenes/cartucheras.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -397,7 +493,7 @@ footer {
 /*imagen card 4 */
 .card-img4 {
   height: 350px;
-  background-image: url(../imagenes/almohada-cervvical.jpeg);
+  background-image: url(../imagenes/almohada-cervvical.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -405,7 +501,7 @@ footer {
 /*imagen card 5*/
 .card-img5 {
   height: 350px;
-  background-image: url(../imagenes/billetera.jpeg);
+  background-image: url(../imagenes/billetera.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -429,7 +525,7 @@ footer {
 /*imagen card 8 */
 .card-img8 {
   height: 350px;
-  background-image: url(../imagenes/folio-a4.jpeg);
+  background-image: url(../imagenes/folio-a4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -437,7 +533,7 @@ footer {
 /*imagen card 9 */
 .card-img9 {
   height: 350px;
-  background-image: url(../imagenes/porta-cosmeticos.jpeg);
+  background-image: url(../imagenes/scrunchines.jpeg);
   background-size: cover;
   background-position: center;
 }
