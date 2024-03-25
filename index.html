@@ -55,10 +55,10 @@
 
     <!---comienzo del contenido principal del sitio
  usando grid system de boostrap-->
- <section>
-    <div class="container">
+ <main>
+ <section class="container">
         <div class="row">
-            <div class="col-sm-6 col-lg-6 imagen-voragine"><img class="imagen" src="./imagenes/logo.jpg" alt="logo del sitio voragine">
+            <div class="col-sm-6 col-lg-6 imagen-voragine"><img class="imagen" src="./imagenes/logo.jpg" alt="logo del sitio voragine-aguja e hilos">
             </div>
             <div class="col-sm-6 col-lg-6 texto-voragine">
                 <div class="texto">
@@ -80,64 +80,60 @@
             </div>
   
         </div>
-    </div>
  </section>
+</main>
     <!---fin del contenido principal-->
     <!---seccion secundaria-->
-    <section>
-      <div class="container-fluid">
+    <section class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 col-lg-6 section-coleccion">Explora Nuestra Colección
+            <div class="col-sm-6 col-lg-6 section-coleccion">
+              <h2>Explora Nuestra Colección</h2>
                 <div class="row">
-                  <div class="col-sm-6 coleccion"><p class="parrafo-coleccion">Sumérgete en nuestra exclusiva selección de productos de cuero, donde cada pieza cuenta una historia de calidad y estilo. Desde clásicos atemporales hasta diseños vanguardistas, encontrarás algo que se adapte perfectamente a tu gusto y necesidades.</p> <a href="./pages/productos.html">ir a productos</a></div>
+                  <div class="col-sm-6 coleccion"><p class="parrafo-coleccion">Sumérgete en nuestra exclusiva selección de productos de cordura, donde cada pieza cuenta una historia de calidad y estilo. Desde clásicos atemporales hasta diseños vanguardistas, encontrarás algo que se adapte perfectamente a tu gusto y necesidades.</p> <a href="./pages/productos.html">ir a productos</a></div>
                   <div class="col-sm-6 coleccion"><img  class="img1" src="./imagenes/bolso.jpeg" alt="bolso mediano en loneta"></div>
                   
                 </div>
              </div>
-            <div class="col-sm-6 col-lg-6 comunidad">Únete a Nuestra Comunidad
+            <div class="col-sm-6 col-lg-6 comunidad">
+              <h2>Únete a Nuestra Comunidad</h2>
               <div class="row">
                 <div class="col-sm-6 cliente"><p class="parrafo-cliente">Síguenos en las redes sociales y únete a nuestra comunidad de amantes de voragine. Descubre las últimas tendencias, participa en concursos y sé el primero en conocer nuestras nuevas colecciones y ofertas exclusivas.</p> <a href="https://www.instagram.com/stories/highlights/17852609960086576/" target="_blank">nuestros clientes</a></div>
-                <div class="col-sm-6 cliente"><img class="cliente-2" src="./imagenes/cliente-2.jpg" alt="cliente satisfecho 2"></div>
+                <div class="col-sm-6 cliente"><img class="cliente-2" src="./imagenes/cliente-2.jpg" alt="reseña de cliente satisfecho por nuestros productos"></div>
                 
               </div>
             </div>
             
         </div>
-    </div>
-
-    </section>
-    <!---fin de seccion secundaria-->
-    <!--seccion de referencia de clientes-->
-
-    <section>
-      <div class="encabezado-preparacion">
-    <h2>Nuestros clientes</h2>
-      <p>Siempre agradecido con nuestros clientes</p>
-    </div>
-    <div class="container">
-      
-      <div class="box-inicio"><img src="./imagenes/logo.jpg" alt="cliente feliz 1" width="200px" height="200px"></div>
-      <div class="box-inicio"><img src="./imagenes/cliente-feliz-2.jpg" alt="cliente feliz 2" width="200px" height="200px"></div>
-      <div class="box-inicio"><img src="./imagenes/cliente-3.jpg" alt="cliente feliz 3" width="200px" height="200px"></div>
-      <div class="box-inicio"><img src="./imagenes/cliente-feliz-4.jpg" alt="cliente feliz 4" width="200px" height="200px"></div>
-      
-      
-    </div>
   </section>
+    <!---fin de seccion secundaria-->
+   <!--seccion de referencia de clientes-->
+
+<section  class="galeria" >
+  <div class="encabezado-galeria">
+    <h3>Reseñas de nuestros clientes</h3>
+    <p>Siempre agradecido con nuestros clientes</p>
+    </div>
+  <div class="container-fluid">
+  <div class="row" >
+    <div class="col-sm-4 col-lg-4" ><img src="./imagenes/cliente-feliz-1.jpg" alt="reseña de un cliente feliz por nuestro trabajo"></div>
+    <div class="col-sm-4 col-lg-4"><img src="./imagenes/cliente-feliz-4.jpg" alt="reseña de un cliente brindando su apoyo"></div>
+    <div class="col-sm-4 col-lg-4"><img src="./imagenes/cliente-feliz-2.jpg" alt="reseña de un cliente feliz por nuestro trabajo"></div>
+    
+  </div>
+</div>
+</section>
+<!-- fin de seccion de referencia de clientes--> 
 
     <!---inicio del footer-->
    
     <footer>
-        <div  class="col-sm-12 col-lg-12 footer">
-            &copy;VORÁGINE
-      
+            <span>&copy;VORÁGINE</span>
             <div class="redes">
                 <a target="_blank" href="https://www.instagram.com/voragine_creaciones/"><i
                 class="fa-brands fa-square-instagram fa-beat" ></i></a>
                 <a target="_blank" href="https://www.facebook.com/voraginevariedades?locale=es_LA"><i
                 class="fa-brands fa-facebook fa-beat"></i></a>
             </div>
-        </div>
         <a target="_blank" href="https://walink.co/642d4b" class="whats">
         <i class="fa-brands fa-whatsapp fa-beat"></i>
         </a>

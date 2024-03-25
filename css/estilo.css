@@ -32,7 +32,6 @@ body {
   font-family: "Protest Riot", sans-serif;
   color: white;
   background-color: #dad7cd;
-  text-shadow: 0 0 10px black;
   margin-left: 20px;
 }
 
@@ -76,7 +75,6 @@ body {
 .texto h1 {
   color: springgreen;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   margin-top: 100px;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -85,7 +83,7 @@ body {
 .texto {
   width: 100%;
   height: 100%;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   margin-left: 10px;
@@ -112,7 +110,7 @@ body {
   height: 250px;
 }
 .coleccion .parrafo-coleccion {
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   color: black;
 }
 
@@ -134,32 +132,35 @@ body {
   height: 250px;
 }
 .cliente .parrafo-cliente {
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   color: black;
 }
 
 /* fin seccion comunidad */
 /* fin seccion secundaria */
-/* conatiner de imagenes para seccion incio y compartida con seccion taller */
-.container {
-  overflow: auto;
-  display: flex;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0, 24px;
+/* conatiner de imagenes para seccion inicio y compartida con seccion taller */
+.encabezado-galeria {
+  margin-top: 60px;
+}
+.encabezado-galeria h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #386641;
+}
+.encabezado-galeria p {
+  text-align: center;
+  font-family: 19px;
+  font-size: 19px;
 }
 
-.box {
-  height: 200px;
-  width: 200px;
-  background: rgba(0, 0, 0, 0.3);
-  margin: 5px;
-  flex-shrink: 0;
-  scroll-snap-align: start;
-  border-radius: 14px;
+.galeria .col-lg-4 {
+  padding: 25px;
+  margin: 0 !important;
 }
-
-.box-inicio:hover {
-  transform: scale(1.6);
+.galeria img {
+  width: 100%;
+  height: 350px;
 }
 
 /* fin de container de imagenes */
@@ -207,9 +208,8 @@ footer {
   margin-top: 120px;
   text-transform: uppercase;
   color: black;
-  font-family: "Protest Riot", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
-  text-shadow: 0 0 10px black;
   padding: 20px;
   letter-spacing: 5px;
   text-decoration: underline;
@@ -219,7 +219,6 @@ footer {
 .texto-mision h2 {
   color: springgreen;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   margin-top: 80px;
   margin-bottom: 1px;
   text-transform: uppercase;
@@ -229,7 +228,7 @@ footer {
 .texto-mision p {
   width: 100%;
   height: 100%;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
@@ -242,7 +241,6 @@ footer {
 .texto-pasion h2 {
   color: springgreen;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   margin-top: 80px;
   margin-bottom: 1px;
   text-transform: uppercase;
@@ -252,7 +250,7 @@ footer {
 .texto-pasion p {
   width: 100%;
   height: 100%;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
@@ -263,7 +261,6 @@ footer {
 .texto-diseño h2 {
   color: springgreen;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   margin-top: 80px;
   margin-bottom: 1px;
   text-transform: uppercase;
@@ -273,7 +270,7 @@ footer {
 .texto-diseño p {
   width: 100%;
   height: 100%;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
@@ -284,7 +281,6 @@ footer {
 .texto-soporte h2 {
   color: springgreen;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   margin-top: 80px;
   margin-bottom: 1px;
   text-transform: uppercase;
@@ -294,7 +290,7 @@ footer {
 .texto-soporte p {
   width: 100%;
   height: 100%;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   letter-spacing: 2px;
@@ -307,7 +303,7 @@ footer {
   height: 350px;
   margin-top: 80px;
   border-radius: 50%;
-  margin-left: -spx;
+  margin-left: -5px;
 }
 
 /*imagen pasion*/
@@ -316,7 +312,7 @@ footer {
   height: 350px;
   margin-top: 80px;
   border-radius: 50%;
-  margin-left: -spx;
+  margin-left: -5px;
 }
 
 /*imagen diseño*/
@@ -325,7 +321,7 @@ footer {
   height: 350px;
   margin-top: 80px;
   border-radius: 50%;
-  margin-left: -spx;
+  margin-left: -5px;
 }
 
 /*imagen soporte */
@@ -334,7 +330,7 @@ footer {
   height: 350px;
   margin-top: 80px;
   border-radius: 50%;
-  margin-left: -spx;
+  margin-left: -5px;
 }
 
 /* fin de estilos de la pagina puntos fuertes*/
@@ -351,14 +347,13 @@ footer {
 .texto-taller h1 {
   color: springgreen;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   margin-top: 80px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .texto-taller {
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   margin-left: 100px;
@@ -377,20 +372,14 @@ footer {
   text-transform: uppercase;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #386641;
-  text-shadow: 0 0 10px black;
 }
 .encabezado-preparacion p {
   text-align: center;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
+  font-size: 19px;
 }
 
 /* fin encabezado preparacion*/
-/* galeria de imagenes de preparacion (container compartdio con acerca de voragine*/
-.box:hover {
-  transform: scale(1.2);
-}
-
-/* fin galeria de imagenes de preparacion*/
 /* fin de seccion preparacion */
 /* fin de estilo para la pagina taller */
 /* inicio de estilo para la pagina productos */
@@ -403,16 +392,15 @@ footer {
   margin-top: 120px;
   text-transform: uppercase;
   color: springgreen;
-  font-family: "Protest Riot", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
-  text-shadow: 0 0 10px black;
   padding: 20px;
   letter-spacing: 5px;
   text-decoration: underline;
 }
 
 .texto-productos {
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   margin-left: 100px;
@@ -439,14 +427,10 @@ footer {
   text-decoration: underline;
 }
 
-.cards-title:hover {
-  transform: scale(1.1);
-}
-
 .cards-desc {
   margin-top: 20px;
   padding: 10px;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
 }
 
 .cards-redes a {
@@ -458,11 +442,7 @@ footer {
 
 .a {
   font-size: 19px;
-  font-family: "Protest Riot", sans-serif;
-}
-
-.cards-redes i:hover {
-  transform: scale(1.2);
+  font-family: cursive;
 }
 
 /*fin de estilos de cards */
@@ -543,7 +523,6 @@ footer {
 .texto-video {
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 0 10px black;
   text-transform: uppercase;
   text-decoration: underline black;
   margin-top: 60px;
@@ -564,16 +543,15 @@ footer {
   margin-top: 120px;
   text-transform: uppercase;
   color: springgreen;
-  font-family: "Protest Riot", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
-  text-shadow: 0 0 10px black;
   padding: 20px;
   letter-spacing: 5px;
   text-decoration: underline;
 }
 
 .parrafo-contacto {
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   padding: 20px;
   font-size: 19px;
   margin-left: 100px;
@@ -599,7 +577,7 @@ footer {
 }
 .formulario label {
   color: black;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
 }
 .formulario .enviar {
   width: 100%;
@@ -608,7 +586,7 @@ footer {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   font-size: 19px;
   color: black;
 }
@@ -623,7 +601,7 @@ footer {
   margin: auto;
   margin-top: 100px;
   border-radius: 4px;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   color: white;
   box-shadow: 7px 13px 37px black;
 }
@@ -635,7 +613,7 @@ footer {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
-  font-family: "Protest Riot", sans-serif;
+  font-family: cursive;
   font-size: 19px;
   color: black;
 }
