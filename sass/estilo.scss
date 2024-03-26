@@ -9,12 +9,13 @@
   } */
 
 /* variables*/
-$color-encabezados: springgreen;
-$color-secundario-para-enabezados: #386641;
-$color-barra-navegacion: #dad7cd;
+$color-encabezados: #386641;;
+$color-barra-navegacion: #F5F1EB;
+$color-body:#C0BC9F;
+$color-footer:#312123;
 $font-principal: "Protest Riot", sans-serif;
 $font-encabezados: Georgia, "Times New Roman", Times, serif;
-$font-textos:cursive;
+$font-textos:'Times New Roman', Times, serif;;
 $font-size-textos: 19px;
 $width-multimedia: 400px;
 $height-multimedia: 350px;
@@ -37,16 +38,12 @@ $color-white: white;
   border-radius: $bord-radius;
   margin-left: $mar-left;
 }
-/* exetend para imagenes*/
-.centrado-imagen {
-  background-size: cover;
-  background-position: center;
-}
-
 /* comienzo de hoja de estilo de acerca de voragine */
 body {
-  background-image: url(../imagenes/fondo-1.jpg);
-  @extend .centrado-imagen;
+background-color: $color-body;
+}
+a{
+  color: $color-encabezados;
 }
 
 /* estilos de la barra de navegacion */
@@ -59,7 +56,7 @@ body {
 }
 .navbar-brand {
   font-family: $font-principal;
-  color: $color-white;
+  color: $color-encabezados;
   background-color: $color-barra-navegacion;
   margin-left: 20px;
 }
@@ -77,22 +74,23 @@ body {
 }
 
 .navbar-collapse :hover {
-  border-bottom: 3p solid $color-white;
+  border-bottom: 3p solid $color-encabezados;
   transition: 0.3s;
 }
 
 .navbar-collapse a:hover {
-  color: $color-white;
-  border-bottom: 1px solid $color-white;
+  color: $color-encabezados;
+  border-bottom: 1px solid $color-encabezados;
 }
 
 .navbar-collapse a {
   color: $color-black;
 }
 
+
 /* fin de estilo de la barra de navegacion */
 
-/* inicio de estilo del contenido principal */
+/* inicio de estilo del contenido principal,compartida con acerca de voragine y staff de voragine */
 .imagen {
   width: 350px;
   height: 450px;
@@ -102,14 +100,7 @@ body {
   margin-left: 20px;
 }
 
-.texto h1 {
-  color: $color-encabezados;
-  font-family: $font-encabezados;
-  margin-top: 100px;
-  margin-bottom: 15px;
-  text-transform: $transform-text;
-}
-
+/* anidacion clase texto y h1 */
 .texto {
   width: 100%;
   height: 100%;
@@ -118,6 +109,13 @@ body {
   font-size: $font-size-textos;
   margin-left: 10px;
   letter-spacing: 2px;
+  h1 {
+    color: $color-encabezados;
+    font-family: $font-encabezados;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    text-transform: $transform-text;
+  }
 }
 
 /* fin de estilo del contenido principal */
@@ -128,10 +126,12 @@ body {
 .section-coleccion {
   text-transform: $transform-text;
   font-family: $font-encabezados;
-  color: $color-secundario-para-enabezados;
+  color: $color-encabezados;
   font-size: $font-size-textos;
   margin-top: 100px;
 }
+
+/* anidacion clase coleccion  */
 .coleccion {
   margin-top: 40px;
   padding: 20px;
@@ -149,11 +149,12 @@ body {
 .comunidad {
   text-transform: $transform-text;
   font-family: $font-encabezados;
-  color: $color-secundario-para-enabezados;
+  color: $color-encabezados;
   font-size: $font-size-textos;
   margin-top: 100px;
 }
 
+/* anidacion clase cliente*/
 .cliente {
   margin-top: 50px;
   .cliente-2 {
@@ -163,27 +164,30 @@ body {
   .parrafo-cliente {
     font-family:$font-textos;
     color: $color-black;
+    font-size: $font-size-textos;
   }
 }
 /* fin seccion comunidad */
 /* fin seccion secundaria */
 
 /* conatiner de imagenes para seccion inicio y compartida con seccion taller */
+/* anidacion clase encabezado-galeria */
 .encabezado-galeria{
     margin-top: 60px;
     h3 {
       text-align: center;
       text-transform: $transform-text;
       font-family: $font-encabezados;
-      color: $color-secundario-para-enabezados;
+      color: $color-encabezados;
     }
     p {
       text-align: center;
-      font-family:$font-size-textos;
+      font-family:$font-textos;
       font-size: $font-size-textos;
     }
   }
 
+  /* anidacion clase galeria */
 .galeria {
   .col-lg-4 {
     padding: 25px;
@@ -199,14 +203,13 @@ body {
 
 /* incio de estilo del footer */
 footer {
-  background-color: $color-black;
+  background-color:$color-footer;
   color: $color-white;
   text-align: center;
   padding: 20px;
   font-size: 30px;
   margin-top: 50px;
-  background-image: url(../imagenes/costura.jpg);
-  @extend .centrado-imagen;
+  
 }
 
 .redes a {
@@ -219,7 +222,7 @@ footer {
 .whats {
   height: 45px;
   width: 45px;
-  background-color: $color-encabezados;
+  background-color: springgreen;
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -234,10 +237,6 @@ footer {
 /* fin de estilo del footer */
 
 /* inicio de estilo para la pagina puntos fuertes */
-.puntos-fuertes {
-  background-image: url(../imagenes/fondo-2.jpg);
-  @extend .centrado-imagen;
-}
 .encabezado-puntosfuertes {
   text-align: center;
   margin-top: 120px;
@@ -251,6 +250,7 @@ footer {
 }
 
 /* inicio encabezado mision */
+/* anidacion clase texto-mision */
 .texto-mision {
   h2 {
     color: $color-encabezados;
@@ -275,6 +275,7 @@ footer {
 /* fin estilo encabezado mision */
 
 /* incio encabezado pasion */
+/* anidacion clase texto-pasion */
 .texto-pasion {
   h2 {
     color: $color-encabezados;
@@ -297,6 +298,7 @@ footer {
 /* fin encabezado pasion */
 
 /* inicio encabezado diseño */
+/* anidacion clase texto-diseño */
 .texto-diseño {
   h2 {
     color: $color-encabezados;
@@ -319,6 +321,7 @@ footer {
 /* fin encabezado diseño */
 
 /* inicio encabezado soporte */
+/* anidacion clase texto-soporte*/
 .texto-soporte {
   h2 {
     color: $color-encabezados;
@@ -412,13 +415,14 @@ footer {
 
 /* seccion preparacion */
 /* encabezado preparacion*/
+/* anidacion clase encabezado-preparacion */
 .encabezado-preparacion {
   margin-top: 60px;
   h2 {
     text-align: center;
     text-transform: $transform-text;
     font-family: $font-encabezados;
-    color: $color-secundario-para-enabezados;
+    color: $color-encabezados;
   }
   p {
     text-align: center;
@@ -432,10 +436,6 @@ footer {
 /* fin de estilo para la pagina taller */
 
 /* inicio de estilo para la pagina productos */
-.productos {
-  background-image: url(../imagenes/fondo-2.jpg);
-  @extend .centrado-imagen;
-}
 .encabezado-productos {
   text-align: center;
   margin-top: 120px;
@@ -469,7 +469,7 @@ footer {
 }
 
 .cards-title {
-  color: $color-secundario-para-enabezados;
+  color: $color-black;
   padding: 10px;
   font-size: 30px;
   font-family: $font-encabezados;
@@ -575,6 +575,8 @@ footer {
   text-align: center;
   margin-left: -5px;
 }
+
+/* anidacion clase redes-formulario */
 .redes-formulario {
   a {
     text-decoration: none;
@@ -588,6 +590,7 @@ footer {
   }
 }
 /*formulario*/
+/* anidacion clase formulario */
 .formulario {
   text-align: center;
   label {
@@ -600,7 +603,7 @@ footer {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid $color-encabezados;
     font-family: $font-textos;
     font-size: $font-size-textos;
     color: $color-black;
@@ -609,6 +612,7 @@ footer {
     transform: scale(1.1);
   }
 }
+
 .form-register {
   width: 400px;
   background: $color-barra-navegacion;
@@ -626,7 +630,7 @@ footer {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid $color-encabezados;
   font-family: $font-textos;
   font-size: $font-size-textos;
   color: $color-black;
