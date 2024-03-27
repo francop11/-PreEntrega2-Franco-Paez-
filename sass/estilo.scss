@@ -38,12 +38,10 @@ $color-white: white;
   border-radius: $bord-radius;
   margin-left: $mar-left;
 }
+
 /* comienzo de hoja de estilo de acerca de voragine */
 body {
 background-color: $color-body;
-}
-a{
-  color: $color-encabezados;
 }
 
 /* estilos de la barra de navegacion */
@@ -116,6 +114,16 @@ a{
     margin-bottom: 15px;
     text-transform: $transform-text;
   }
+  a{
+    color: $color-white;
+    text-decoration: none;
+    
+  }
+  a:hover {
+    border-bottom: 3p solid $color-black;
+    transition: 0.3s;
+    color: $color-encabezados;
+  }
 }
 
 /* fin de estilo del contenido principal */
@@ -143,6 +151,16 @@ a{
     font-family:$font-textos;
     color: $color-black;
   }
+  a{
+    color: $color-white;
+    text-decoration: none;
+    
+  }
+  a:hover {
+    border-bottom: 3p solid $color-black;
+    transition: 0.3s;
+    color: $color-encabezados;
+  }
 }
 /* fin seccion coleccion */
 /* seccion comunidad*/
@@ -165,6 +183,16 @@ a{
     font-family:$font-textos;
     color: $color-black;
     font-size: $font-size-textos;
+  }
+  a{
+    color: $color-white;
+    text-decoration: none;
+    
+  }
+  a:hover {
+    border-bottom: 3p solid $color-black;
+    transition: 0.3s;
+    color: $color-encabezados;
   }
 }
 /* fin seccion comunidad */
@@ -460,7 +488,7 @@ footer {
 
 .cards {
   width: 300px;
-  height: 750px;
+  height: 800px;
   background-color: $color-barra-navegacion;
   text-align: center;
   margin-left: 20px;
